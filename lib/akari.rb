@@ -3,10 +3,11 @@ require_relative "akari/version"
 require "r-fxxk"
 
 module Akari
+  # define Error
   class Error < StandardError; end
 
   # define Akari language
-  class Akari < Brainfuck
+  class AkariSpec < Brainfuck
     nxt "ピロリンッ"
     inc "ハロー！"
     prv "悪い子ちゃん"
