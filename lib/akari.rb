@@ -3,10 +3,11 @@ require_relative "akari/version"
 require "r-fxxk"
 
 module Akari
+  # define Error
   class Error < StandardError; end
 
   # define Akari language
-  class Akari < Brainfuck
+  class AkariSpec < Brainfuck
     nxt "ピロリンッ"
     inc "ハロー！"
     prv "悪い子ちゃん"
@@ -17,12 +18,8 @@ module Akari
     get "おけまる"
   end
 
-  # read source code from first argument
-  program = ARGF.read
-
-  # display source code
-  puts program
-
-  # display result
-  puts Akari.new.fuck(program)
+  # compile to Brainfuck
+  def self.compile_to_bf(akari)
+    AkariSpec.new.compile(akari)
+  end  
 end
