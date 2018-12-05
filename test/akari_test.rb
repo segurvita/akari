@@ -5,7 +5,9 @@ class AkariTest < Minitest::Test
     refute_nil ::Akari::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_can_compile_to_bf
+    akari = "ピロリンッハロー！悪い子ちゃんヤミいきま→しょう！卍あ、カラスだおけまる"
+    bf = ">+<-[].,"
+    assert_equal bf, Akari.compile_to_bf(akari)
   end
 end
