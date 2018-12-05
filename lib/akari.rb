@@ -18,12 +18,4 @@ module Akari
     get "おけまる"
   end
 
-  # read source code from first argument
-  program = ARGF.read
-
-  # display source code
-  puts program
-
-  # display result
-  puts Akari.new.fuck(program)
 end
