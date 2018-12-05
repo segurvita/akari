@@ -18,4 +18,8 @@ module Akari
     get "おけまる"
   end
 
+  # compile to Brainfuck
+  def self.compile_to_bf(akari)
+    AkariSpec.new.compile(akari)
+  end  
 end
