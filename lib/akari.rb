@@ -20,12 +20,12 @@ module Akari
   end
 
   # compile to Brainfuck
-  def self.compile_to_bf(akari)
+  def self.convert(akari)
     AkariSpec.new.compile(akari)
   end
 
   # run
-  def self.run(akari)
+  def self.execute(akari)
     AkariSpec.new.fuck(akari)
   end  
 end
