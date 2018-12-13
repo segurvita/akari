@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   # Custom
   spec.add_runtime_dependency "r-fxxk", "~> 0.4"
+  spec.add_dependency "thor"
 end
