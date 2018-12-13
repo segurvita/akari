@@ -1,5 +1,6 @@
 Encoding.default_external = "UTF-8"
 require_relative "akari/version"
+require_relative "akari/cli"
 require "r-fxxk"
 
 module Akari
