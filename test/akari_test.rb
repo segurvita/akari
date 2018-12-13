@@ -5,10 +5,10 @@ class AkariTest < Minitest::Test
     refute_nil ::Akari::VERSION
   end
 
-  def test_it_can_compile_to_bf
+  def test_it_can_convert
     akari = "ピロリンッハロー！悪い子ちゃんヤミいきま→しょう！卍あ、カラスだおけまる"
     bf = ">+<-[].,"
-    assert_equal bf, Akari.compile_to_bf(akari)
+    assert_equal bf, Akari.convert(akari)
   end
 
   def test_it_can_run
@@ -29,6 +29,6 @@ class AkariTest < Minitest::Test
     EOS
 
     stdout = "Hello, world!"
-    assert_equal stdout, Akari.run(akari)
+    assert_equal stdout, Akari.execute(akari)
   end
 end
