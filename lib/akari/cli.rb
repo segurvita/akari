@@ -4,14 +4,18 @@ require "thor"
 
 module Akari
   class CLI < Thor
-    desc "convert {akari_code}", "convert {akari_code} to {brainfxxk_code}"
+    desc "convert {akari_code_file}", "convert {akari_code} to {brainfxxk_code}"
     def convert(str)
-      puts Akari.convert(str.encode("UTF-8"))
+      filename = str.encode("UTF-8")
+      filebody = File.read(filename).encode("UTF-8")
+      puts Akari.convert(filebody)
     end
 
-    desc "execute {akari_code}", "execute {akari_code}"
+    desc "execute {akari_code_file}", "execute {akari_code}"
     def execute(str)
-      puts Akari.execute(str.encode("UTF-8"))
+      filename = str.encode("UTF-8")
+      filebody = File.read(filename).encode("UTF-8")
+      puts Akari.execute(filebody)
     end
   end
 end
