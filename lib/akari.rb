@@ -28,4 +28,9 @@ module Akari
   def self.execute(akari_code)
     AkariSpec.new.fuck(akari_code)
   end
+
+  # get file body
+  def self.read_file(filename)
+    File.read(filename.encode("UTF-8")).encode("UTF-8")
+  end
 end
