@@ -1,6 +1,9 @@
 # Akari
+<div style="text-align:right">Language: <i>English</i> | <a href="README_JA.md">日本語</a></div>
 
 This is Akari interpreter written in Ruby.
+
+
 
 ## Installation
 
@@ -18,27 +21,51 @@ Or install it yourself as:
 
     $ gem install akari
 
+
+
 ## Usage
 
-TODO: Write usage instructions here
+### Show help
 
-## Development
+```bash
+$ akari h
+Commands:
+  akari convert {akari_code_file}  # convert {akari_code} to {brainfxxk_code}
+  akari execute {akari_code_file}  # execute {akari_code}
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+### Convert Akari Code to Brainfxxk Code
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+$ akari convert sample/hello_world.akari > sample/hello_world.bf
+```
+
+### Execute Akari Code
+
+```bash
+$ akari execute sample/hello_world.akari
+Hello, world!
+```
+
+
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/segurvita/akari. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+
+
 ## Author
 
 [@segur_vita](https://twitter.com/segur_vita)
 
+
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+
 
 ## Code of Conduct
 
