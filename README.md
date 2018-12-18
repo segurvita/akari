@@ -30,8 +30,10 @@ Or install it yourself as:
 ```bash
 $ akari h
 Commands:
-  akari convert {akari_code_file}  # convert {akari_code} to {brainfxxk_code}
-  akari execute {akari_code_file}  # execute {akari_code}
+  akari convert {akari_code_file}  # Convert {akari_code} to {brainfxxk_code}
+  akari execute {akari_code_file}  # Execute {akari_code}
+  akari help [COMMAND]             # Describe available commands or one speci...
+  akari version                    # Show akari version
 ```
 
 ### Convert Akari Code to Brainfxxk Code
