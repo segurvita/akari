@@ -15,5 +15,10 @@ module Akari
       filebody = Akari.read_file(filename)
       puts Akari.execute(filebody)
     end
+
+    desc "version", "show akari version"
+    def version
+      puts "akari " + Akari::VERSION
+    end
   end
 end
