@@ -7,9 +7,7 @@
 
 ## Akari言語とは
 
-Brainfxxkの派生言語です。詳細はこちらをご覧ください。
-
-<https://qiita.com/segur/items/96989fc1dc282d0a02bd>
+Brainfxxkの派生言語です。詳細は https://qiita.com/segur/items/96989fc1dc282d0a02bd をご覧ください。
 
 
 

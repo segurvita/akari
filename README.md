@@ -7,9 +7,8 @@ This is Akari interpreter written in Ruby.
 
 ## What is Akari language?
 
-It is a derivatives of Brainfuck. Please see below for the detail. (Japanese only)
+It is a derivatives of Brainfuck. Please see https://qiita.com/segur/items/96989fc1dc282d0a02bd for the detail. (Japanese only)
 
-<https://qiita.com/segur/items/96989fc1dc282d0a02bd>
 
 
 
