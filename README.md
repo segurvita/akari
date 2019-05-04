@@ -5,6 +5,59 @@ This is Akari interpreter written in Ruby.
 
 
 
+## What is Akari language?
+
+It is a derivatives of Brainfuck. Please see https://qiita.com/segur/items/96989fc1dc282d0a02bd for the detail. (Japanese only)
+
+
+
+
+Akari language has the eight language commands below:
+
+| Akari command   | Brainfuck command | Behavior                                                     |
+| --------------- | ----------------- | ------------------------------------------------------------ |
+| ピロリンッ      | >                 | increment the data pointer (to point to the next cell to the right). |
+| 悪い子ちゃん    | <                 | decrement the data pointer (to point to the next cell to the left). |
+| ハロー！        | +                 | increment (increase by one) the byte at the data pointer.    |
+| ヤミ            | -                 | decrement (decrease by one) the byte at the data pointer.    |
+| あ、カラスだ    | .                 | output the byte at the data pointer.                         |
+| おけまる        | ,                 | accept one byte of input, storing its value in the byte at the data pointer. |
+| いきま→しょう！ | [                 | if the byte at the data pointer is zero, then jump it forward to the command after the matching `卍` command. |
+| 卍              | ]                 | if the byte at the data pointer is nonzero, then jump it back to the command after the matching `いきま→しょう！` command. |
+
+
+
+For example, the following program prints  `Hello, wolrd!` to the screen:
+
+```
+ハロー！ハロー！ハロー！ハロー！ハロー！ハロー！ハロー！ハロー！ハロー！
+いきま→しょう！ピロリンッハロー！ハロー！ハロー！ハロー！ハロー！ハロー！
+ハロー！ハロー！ピロリンッハロー！ハロー！ハロー！ハロー！ハロー！ハロー！
+ハロー！ハロー！ハロー！ハロー！ハロー！ピロリンッハロー！ハロー！ハロー！
+ハロー！ハロー！悪い子ちゃん悪い子ちゃん悪い子ちゃんヤミ卍ピロリンッ
+あ、カラスだピロリンッハロー！ハロー！あ、カラスだハロー！ハロー！ハロー！
+ハロー！ハロー！ハロー！ハロー！あ、カラスだあ、カラスだハロー！ハロー！
+ハロー！あ、カラスだピロリンッヤミあ、カラスだヤミヤミヤミヤミヤミヤミヤミ
+ヤミヤミヤミヤミヤミあ、カラスだ悪い子ちゃんハロー！ハロー！ハロー！
+ハロー！ハロー！ハロー！ハロー！ハロー！あ、カラスだヤミヤミヤミヤミヤミ
+ヤミヤミヤミあ、カラスだハロー！ハロー！ハロー！あ、カラスだヤミヤミヤミ
+ヤミヤミヤミあ、カラスだヤミヤミヤミヤミヤミヤミヤミヤミあ、カラスだ
+ピロリンッハロー！あ、カラスだ
+```
+
+
+
+## Dependency
+
+The following libraries are mainly used.
+
+- `bundler`　： Gem management
+- `minitest` ： Unit test
+- `r-fxxk` ： Brainfuck
+- `thor` ： Command line tool
+
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
