@@ -1,4 +1,4 @@
-# Akari
+# Akari [![Build Status](https://travis-ci.org/segurvita/akari.svg?branch=master)](https://travis-ci.org/segurvita/akari)
 <div style="text-align:right">Language: <a href="README.md">English</a> | <i>日本語</i></div>
 
 本プロジェクトは、Akari言語のインタプライターです。Rubyで書かれています。

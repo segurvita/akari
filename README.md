@@ -1,4 +1,4 @@
-# Akari
+# Akari [![Build Status](https://travis-ci.org/segurvita/akari.svg?branch=master)](https://travis-ci.org/segurvita/akari)
 <div style="text-align:right">Language: <i>English</i> | <a href="README_JA.md">日本語</a></div>
 
 This is Akari interpreter written in Ruby.
